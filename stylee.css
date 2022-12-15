@@ -1,0 +1,549 @@
+:root{
+    --main-radius: 10px;
+    --main-padding:10px;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.4fr .3fr 1fr;
+    grid-template-rows: .2fr .4fr .4fr .5fr .5fr .2fr;
+    grid-gap: 10px;
+   
+    grid-template-areas: 
+    ". header header header header ."
+    ". profile main main sidebar ."
+    ". profile main main sidebar ."
+    ". menu main main sidebar ."
+    ". settings main main sidebar ."
+    ". footer footer footer footer .";
+
+    margin-top: 10px;
+
+}
+
+.header{
+    border: 2px solid black;
+    grid-area: header;
+    border-radius: var(--main-radius);
+    background-color: darkslategrey;
+}
+
+
+.profile{
+    border: 2px solid black;
+    grid-area: profile;
+    border-radius: var(--main-radius);
+    background-color: darkslategrey;
+}
+
+.menu{
+    border: 2px solid black;
+    grid-area: menu;
+    border-radius: var(--main-radius);
+    background-color: darkslategrey;
+    line-height: 2.2rem;
+    background-color: darkslategrey;
+    padding: 5px;
+}
+
+
+.settings{
+    border: 2px solid black;
+    grid-area: settings;
+    border-radius: var(--main-radius);
+    background-color: darkslategrey;
+    line-height: 2.2rem;
+    padding: 5px;
+}
+
+
+.main-content{
+    border: 2px solid black;
+    grid-area: main;
+    border-radius: var(--main-radius);
+    background-color: darkslategrey;
+    padding: 1.8px;
+    line-height: 1.55rem;
+}
+
+.list{
+    line-height: 1.9rem;
+    font-size: 17.5px;
+}
+
+.sidebar{
+    border: 2px solid black;
+    grid-area: sidebar;
+    border-radius: var(--main-radius);
+    background-color: darkslategrey;
+}
+
+.footer{
+    border: 2px solid black;
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    background-color: darkslategrey;
+}
+
+table{
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px ;
+    margin: 10px 10px;
+    padding: 5px;
+    gap: 10px;
+}
+
+td{
+    border: solid black 2px;
+    border-collapse: collapse;
+    border-radius: var(--main-radius);
+    padding: var(--main-padding);
+    text-align: center;
+    justify-content: center;
+}
+
+.container-two{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 7px ;
+    margin: 5px 8px;
+    padding: 10px;
+    padding-bottom: 0%;
+    font-size: 18px;
+}
+
+h2{
+    text-align: center;
+}
+
+.img-container{
+    width: 300px;
+    height: 90%;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 0.25s ;
+
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.overlay:hover > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.overlay > * {
+    transform: translateY(-5);
+}
+
+.titulo{
+    font-weight: bold;
+}
+
+.imahenimanny{
+    font-size:1.25em;
+    text-align: center;
+}
+
+.menu1{
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 3px;
+}
+
+.menu2{
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 3px;
+}
+
+.menu3{
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 3px;
+}
+
+.menu4{
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 3px;
+}
+
+.menu5{
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 2px;
+}
+
+i{
+    margin-right: 10px;
+}
+
+.thirsty{
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+
+.ads_container{
+     background-color:orange;
+     padding: 2px;
+     border-radius: 10px;
+     font-weight: bold;
+     margin: 4px;
+}
+
+.adsdin{
+    width: 100%;
+    height:100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.settings1{
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 3px;
+}
+
+.settings2{
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 3px;
+}
+
+.settings3{
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 3px;
+}
+
+.settings4{
+    font-size: 20px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 3px;
+}
+
+.skt-group{
+    width: 353px;
+    height: 320px;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-left: 3px;
+}
+
+.listed{
+    margin-bottom: 5.7px;
+}
+
+.skt{
+    color: blue;
+    padding: 5px;
+    margin: 10px;
+}
+
+.suggested{
+    float: right;
+}
+
+span{
+    color:gray;
+    font-weight: lighter;
+    float: right;
+    font-size: 17px;
+    margin-top: 3px;
+}
+
+.chupapi{
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: orangered;
+    color: black;
+    font-weight: bold;
+    margin-left: 32%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.foods-container{
+    width: 353px;
+    height: 160px;
+}
+
+.foods{
+    width: 95%;
+    height: 100%;
+    border: 2px solid black;
+    margin-left: 5px;
+}
+
+.gocavs{
+    font-weight: lighter;
+    font-size: 16px;
+    transform: translateY(-22px);
+    margin-left: 5px;
+}
+
+.gocav{
+    margin-top: 12px;
+    margin-left: 5px;
+    transform: translateY(-7px);
+}
+
+.join{
+    width: 335px;
+    height: 30px;
+    background: white;
+    position: absolute;
+    transform: translateY(-35px);
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 10px ;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    border: 2px solid  black;
+    display: flex;
+}
+
+.hello{
+    text-align: center;
+    text-decoration: none;
+}
+
+.flexbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr .5fr .5fr;
+    grid-template-rows: .4fr;
+    grid-template-areas: "fishbook . .  search home logout";
+    background-color: white;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.search-box{
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 19px;
+    grid-area: search;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+.fishbook{
+    font-size: 22px;
+    border-radius: 10px;
+    width: 200px;
+    height: 55px;
+    grid-area: fishbook;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: lightskyblue;
+    padding-left: 8px;
+}
+
+#search{
+    height: 40px;
+    font-size: 19px;
+    border: white;
+    margin-right: 2px;
+}
+
+.home{
+    font-size: 50px;
+    grid-area: home;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: lightslategray;
+    margin-right: 2px;
+}
+
+.logout{
+    font-size: 50px;
+    grid-area: logout;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: lightslategray;
+    margin-right: 2px;
+}
+
+.sponsored{
+    background-color: white;
+    width: 360px;
+    height: 266px;
+    border-radius: 10px;
+    margin-left: 4px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+
+.sponsoredd{
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 345px;
+    height: 24px;
+    margin: 6px;
+    text-align: center;
+    justify-content: center;
+}
+
+.ano{
+   width: 100px;
+   height: 100px;
+   border-radius: 10px;
+   margin: 5px;
+   margin-left: 10px;
+   border: 2px solid black;
+}
+
+.fleii{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+}
+
+.koko{
+    margin-left: auto;
+    margin-right: 60px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.koku{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.contact{
+    width: 358px;
+    height: 155px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.contactlense{
+    border: 2px solid black;
+    height: 24px;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.foryou{
+    float: left;
+    margin-right: 140px;
+}
+
+.counter{
+    border: solid 2px black;
+    width: 345px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.imahengactor{
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 6px;
+}
+
+.oppa{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
